@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--bootstrap link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <!--fontawesome link-->
+  <script src="https://kit.fontawesome.com/ed23c16751.js" crossorigin="anonymous"></script>
+       
+  <!--css link-->
+  <link rel="stylesheet" href="email-template.css">
+
+  <title>Email Template with Bootstrap Grid</title>
+
+  
+       
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- left column-->
+      <div class="col-2 " id="left-col">
+       
+        <!--icon and Welcome, Brock! text-->
+        <div class="row d-flex justify-content-center">
+          <div class="col-3 ">
+            <i class="fas fa-user-circle fa-3x text-light mt-4 "></i>
+          </div>
+          <div class="col-8">
+            <p class="text-light mt-5">Welcome, Brock!</p>
+          </div>
+        
+          <!--button COMPOSE-->
+          <div class="row">
+            <div class="col d-flex justify-content-center">
+              <button type="button" class="btn btn-warning text-light mt-3 mb-5" id="button">COMPOSE</button>
+            </div>
+           
+            <!--link for inbox, tagged, important, sent mail, drafts, trash-->
+            <div class="col d-flex flex-column">
+              <button type="button" class="btn btn-link  link">Inbox (1)</button>
+              <button type="button" class="btn btn-link link ">Tagged</button>
+              <button type="button" class="btn btn-link link ">Important</button>
+              <button type="button" class="btn btn-link link ">Sent Mail</button>
+              <button type="button" class="btn btn-link link ">Drafts</button>
+              <button type="button" class="btn btn-link link ">Trash</button>
+            </div>
+          </div>
+        </div>
+
+      </div> <!--end left column-->
+      
+       <!-- middle column-->
+      <div class="col-3" id="middle-col">
+
+        <!--search bar-->
+        <div class="input-group mt-5">
+          <button type="submit" class="border-0" ><i class="fa fa-search bg-white p-1" id></i></button>
+          <input type="text" placeholder="Search for emails" name="search" class="border-0">
+        </div>
+        
+        <!--inbox information-->
+        <div class="card1">
+                <span class="date-time">02:45pm</span>
+                <h6 class="font-weight-bold">LinkedIn</h6>
+                <p>You have a new connection request.</p>
+            </div>
+            <div class="card1">
+              <span class="date-time">Jul 3, 2020</span>
+              <h6>Micheal Scott Daily Quotes</h6>
+              <p>I'm optimistic because everyday I get a little more desp...</p>
+          </div>
+          <div class="card1">
+            <span class="date-time">Feb 9, 2020</span>
+            <h6>LaMar Software</h6>
+            <p>Learn how you can give us money by calling (209) 322 7...</p>
+        </div>
+
+      </div> <!--end left column-->
+
+       <!-- right column-->
+      <div class="col-7" id="right-col">
+        <div class="form-outline">
+          <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+          <label class="form-label" for="textAreaExample">Message</label>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
