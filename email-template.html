@@ -10,9 +10,12 @@
   
   <!--fontawesome link-->
   <script src="https://kit.fontawesome.com/ed23c16751.js" crossorigin="anonymous"></script>
+  
        
   <!--css link-->
   <link rel="stylesheet" href="email-template.css">
+
+  
 
   <title>Email Template with Bootstrap Grid</title>
 
@@ -24,10 +27,10 @@
     <div class="row">
 
       <!-- left column-->
-      <div class="col-2 " id="left-col">
+      <div class="col-2 col-sm-2 d-flex flex-column justify-content-start align-items-start" id="left-col">
        
         <!--icon and Welcome, Brock! text-->
-        <div class="row d-flex justify-content-center">
+        <div class="row ">
           <div class="col-3 ">
             <i class="fas fa-user-circle fa-3x text-light mt-4 "></i>
           </div>
@@ -56,42 +59,84 @@
       </div> <!--end left column-->
       
        <!-- middle column-->
-      <div class="col-3" id="middle-col">
+      <div class="col-3 " id="middle-col">
 
         <!--search bar-->
-        <div class="input-group mt-5">
-          <button type="submit" class="border-0" ><i class="fa fa-search bg-white p-1" id></i></button>
-          <input type="text" placeholder="Search for emails" name="search" class="border-0">
-        </div>
-        
-        <!--inbox information-->
-        <div class="card1">
-                <span class="date-time">02:45pm</span>
-                <h6 class="font-weight-bold">LinkedIn</h6>
-                <p>You have a new connection request.</p>
-            </div>
-            <div class="card1">
-              <span class="date-time">Jul 3, 2020</span>
-              <h6>Micheal Scott Daily Quotes</h6>
-              <p>I'm optimistic because everyday I get a little more desp...</p>
-          </div>
-          <div class="card1">
-            <span class="date-time">Feb 9, 2020</span>
-            <h6>LaMar Software</h6>
-            <p>Learn how you can give us money by calling (209) 322 7...</p>
+        <div class="search-box">
+          <form action ="#" class="p-1">
+            <button type="submit"><i class="fa fa-search" ></i></button>
+            <input type="email" aria-describedby="emailHelp" placeholder="Search for emails" >
+          </form>
         </div>
 
+        <!--inbox information-->
+        <div class="card mt-5 bg-transparent border-0 higlight">
+          <div class="card-body">
+            <span class="date-time text-muted">02:45pm</span>
+            <p class="card-title"><strong>LinkedIn</strong></p>
+            <p class="card-text text-muted">You have a new connection request</p>
+          </div>
+        </div>
+
+        <div class="card my-3 bg-transparent border-0 higlight" >
+          <div class="card-body">
+            <span class="date-time text-muted">Jul 3, 2020</span>
+            <p class="card-title"><strong>Micheal Scott Daily Quotes</strong></p>
+            <p class="card-text text-muted">I'm optimistic because everyday I get a little more desp...</p>
+          </div>
+        </div>
+
+        <div class="card my-3 bg-transparent border-0 higlight">
+          <div class="card-body">
+            <span class="date-time text-muted">Feb 9, 2020</span>
+            <p class="card-title"><strong>LaMar Software</strong></p>
+            <p class="card-text text-muted">Learn how you can give us money by calling (209) 322 7...</p>
+
+          </div>
+        </div>
       </div> <!--end left column-->
 
        <!-- right column-->
-      <div class="col-7" id="right-col">
-        <div class="form-outline">
-          <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
-          <label class="form-label" for="textAreaExample">Message</label>
+      <div class="col-7 col-sm-7" id="right-col">
+
+        <!--to and from-->
+        <div class="card border-0 m-5">
+          <div class="body">
+            <small class="text-muted ">To: taylor@Iamarsoftware.io</small>
+            <br>
+            <small class="text-muted "> From: re-play@theofficenbc.com</small>
+          </div>
         </div>
-
+      
+        <!--message box-->
+        <div class="card m-4 border-0">
+          <div class="card-body">
+            <span class="date-time text-muted">
+              <button type="submit"><i class="fas fa-trash text-muted"></i></button> 
+              <button type="submit"><i class="fas fa-reply text-muted"></i></button>
+              <button type="submit"><i class="fas fa-ellipsis-h text-muted"></i></button>
+            </span>
+            <h3>Micheal Scott Dail Quotes</h3>
+            <div class="text-muted">
+              <p class="mt-5">"Friends joke with one another. 'Hey, you're poor.' 'Hey, your momma's dead.'That's what friends do."</p>
+              <p>"its a good thing Russia doesn't exist anymore."</p>
+              <p>"You cheated on me? When I specifically asked you not to?"</p>
+              <p>"it just seems awfully mean. But sometimes, the ends justify the mean."</p>
+              <p>"Reverse psychology is an awesome tool. I don't knkow if you guys know about it, but, basically, you make someone think the opposite of what yoy believe, and that tricks them inot doing something stupid. Works like a charm."</p>
+            </div>
+          </div>
+        </div>
+           
+          <!--message box for input-->
+          <div class="message-box">
+            <textarea  name="message" class="form-control" placeholder="Message for me *" rows="4"  ></textarea>
+            <div class="d-flex justify-content-between">
+              <button type="submit"><i class="fas fa-paperclip fa-lg p-2 text-muted"></i></button>
+              <button type="button" class="btn btn-outline-warning m-2">Reply</button>
+            </div>
+            
+          </div>
       </div>
-
     </div>
   </div>
   
