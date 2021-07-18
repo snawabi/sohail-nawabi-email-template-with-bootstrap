@@ -27,59 +27,50 @@
     <div class="row">
 
       <!-- left column-->
-      <div class="col-2 col-sm-2 d-flex flex-column justify-content-start align-items-start" id="left-col">
+      <div class="col-lg-2 col-md-2 col-sm-2 change-shape" id="left-col">
        
         <!--icon and Welcome, Brock! text-->
-        <div class="row ">
-          <div class="col-3 ">
-            <i class="fas fa-user-circle fa-3x text-light mt-4 "></i>
-          </div>
-          <div class="col-8">
-            <p class="text-light mt-5">Welcome, Brock!</p>
-          </div>
-        
-          <!--button COMPOSE-->
-          <div class="row">
-            <div class="col d-flex justify-content-center">
-              <button type="button" class="btn btn-warning text-light mt-3 mb-5" id="button">COMPOSE</button>
-            </div>
-           
-            <!--link for inbox, tagged, important, sent mail, drafts, trash-->
-            <div class="col d-flex flex-column">
-              <button type="button" class="btn btn-link  link">Inbox (1)</button>
-              <button type="button" class="btn btn-link link ">Tagged</button>
-              <button type="button" class="btn btn-link link ">Important</button>
-              <button type="button" class="btn btn-link link ">Sent Mail</button>
-              <button type="button" class="btn btn-link link ">Drafts</button>
-              <button type="button" class="btn btn-link link ">Trash</button>
-            </div>
-          </div>
+        <div class="d-flex flex-column  align-items-center">
+          <i class="fas fa-user-circle fa-2x text-light mt-4"> <span class="left-font-size"> Welcome, Brock!</span></i>
+          <br>
+          <br>
+        <!--button COMPOSE-->
+          <button type="button" class="btn btn-warning text-light mt-3 mb-5 button-compose" id="button">COMPOSE</button>
+        </div>  
+        <div class="left-font-size">
+          <!--link for inbox, tagged, important, sent mail, drafts, trash-->
+          <button type="button" class="btn btn-link  link">Inbox (1)</button>
+          <button type="button" class="btn btn-link link ">Tagged</button>
+          <button type="button" class="btn btn-link link ">Important</button>
+          <button type="button" class="btn btn-link link ">Sent Mail</button>
+          <button type="button" class="btn btn-link link ">Drafts</button>
+          <button type="button" class="btn btn-link link mb-4 ">Trash</button>
         </div>
 
       </div> <!--end left column-->
       
        <!-- middle column-->
-      <div class="col-3 " id="middle-col">
+      <div class="col-lg-3 col-md-3 col-sm-3 d-flex flex-column align-items-center" id="middle-col">
 
         <!--search bar-->
-        <div class="search-box">
-          <form action ="#" class="p-1">
+        <div class="search-box middle-font-size ">
+          <form action ="#">
             <button type="submit"><i class="fa fa-search" ></i></button>
-            <input type="email" aria-describedby="emailHelp" placeholder="Search for emails" >
+            <input type="email"  aria-describedby="emailHelp" placeholder="Search for emails" >
           </form>
         </div>
 
         <!--inbox information-->
         <div class="card mt-5 bg-transparent border-0 higlight">
-          <div class="card-body">
+          <div class="card-body middle-font-size ">
             <span class="date-time text-muted">02:45pm</span>
             <p class="card-title"><strong>LinkedIn</strong></p>
-            <p class="card-text text-muted">You have a new connection request</p>
+            <p class="card-text text-muted" > You have a new connection request. Please respond.</p>
           </div>
         </div>
 
         <div class="card my-3 bg-transparent border-0 higlight" >
-          <div class="card-body">
+          <div class="card-body middle-font-size ">
             <span class="date-time text-muted">Jul 3, 2020</span>
             <p class="card-title"><strong>Micheal Scott Daily Quotes</strong></p>
             <p class="card-text text-muted">I'm optimistic because everyday I get a little more desp...</p>
@@ -87,7 +78,7 @@
         </div>
 
         <div class="card my-3 bg-transparent border-0 higlight">
-          <div class="card-body">
+          <div class="card-body middle-font-size ">
             <span class="date-time text-muted">Feb 9, 2020</span>
             <p class="card-title"><strong>LaMar Software</strong></p>
             <p class="card-text text-muted">Learn how you can give us money by calling (209) 322 7...</p>
@@ -97,18 +88,18 @@
       </div> <!--end left column-->
 
        <!-- right column-->
-      <div class="col-7 col-sm-7" id="right-col">
+      <div class="col-lg-7 col-md-7 col-sm-7 right-font-size" id="right-col">
 
         <!--to and from-->
         <div class="card border-0 m-5">
-          <div class="body">
+          <div class="body right-font-size ">
             <small class="text-muted ">To: taylor@Iamarsoftware.io</small>
             <br>
             <small class="text-muted "> From: re-play@theofficenbc.com</small>
           </div>
         </div>
       
-        <!--message box-->
+        <!--message info-->
         <div class="card m-4 border-0">
           <div class="card-body">
             <span class="date-time text-muted">
@@ -116,9 +107,9 @@
               <button type="submit"><i class="fas fa-reply text-muted"></i></button>
               <button type="submit"><i class="fas fa-ellipsis-h text-muted"></i></button>
             </span>
-            <h3>Micheal Scott Dail Quotes</h3>
+            <p class="title-font-size"><strong>Michael Scott Daily Quotes</strong></p>
             <div class="text-muted">
-              <p class="mt-5">"Friends joke with one another. 'Hey, you're poor.' 'Hey, your momma's dead.'That's what friends do."</p>
+              <p class="mt-5">"Friends joke with one another. 'Hey, you're poor.' 'Hey, your momma's    dead.'That's what friends do."</p>
               <p>"its a good thing Russia doesn't exist anymore."</p>
               <p>"You cheated on me? When I specifically asked you not to?"</p>
               <p>"it just seems awfully mean. But sometimes, the ends justify the mean."</p>
@@ -128,11 +119,11 @@
         </div>
            
           <!--message box for input-->
-          <div class="message-box">
-            <textarea  name="message" class="form-control" placeholder="Message for me *" rows="4"  ></textarea>
+          <div class="message-box mb-5">
+            <textarea  name="message" class="form-control"  ></textarea>
             <div class="d-flex justify-content-between">
               <button type="submit"><i class="fas fa-paperclip fa-lg p-2 text-muted"></i></button>
-              <button type="button" class="btn btn-outline-warning m-2">Reply</button>
+              <button type="button" class="btn btn-outline-warning m-2 right-font-size ">Reply</button>
             </div>
             
           </div>

@@ -5,35 +5,52 @@ body, html {
 body {
   height: 100vh;
   overflow: auto;
-  background-color: lightgrey;
+ 
 }
 
-.container-fluid {
-  width: 100vw;
-  height: 100vh;
-}
 
 #left-col {
-  background-color: rgb(28, 94, 66);
- 
+  background-color: rgb(24, 61, 46);
   height: 100vh;
+}
+
+.left-font-size {
+  margin: 0;
+  padding: 0;
+  font-size: 1vw;
+}
+
+.button-compose {
+  font-size: 1vw;
 }
 
 #middle-col {
   background-color: rgb(235, 235, 235);
   height: 100vh;
 }
+.middle-font-size {
+  font-size: 1vw;
+}
 
 #right-col {
   background-color: white;
   height: 100vh;
-  
+}
+
+.right-font-size {
+  font-size: 1vw;
+}
+
+.title-font-size {
+  font-size: 2vw;
 }
 
 #button{
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
+
+
 
 .link {
   display: flex;
@@ -67,13 +84,14 @@ body {
 
 .date-time{
   float: right;
-  font-size: 12px;
 }
 
 .search-box {
+  width: 22vw;
   margin-top: 30px;
   background: white;
-  border-radius: 2px;
+  border-radius: 1em;
+  
 }
 
 .search-box:hover {
@@ -89,6 +107,8 @@ form {
 input {
   border: none;
   outline: none;
+  width: 15vw;
+  height: 3vh;
  
 }
 
@@ -96,6 +116,7 @@ button {
   background: transparent;
   border: none;
 }
+
 .message-box {
   margin-top: 160px !important;
   margin-left: 3em;
@@ -108,6 +129,28 @@ button {
 
 textarea {
   border: none !important;
+}
 
-  
+@media (max-width: 575px) {
+  #left-col {
+    height: 50%;
+  }
+
+  #middle-col {
+    height: 100%;
+  }
+
+  #right-col {
+    height: 100%;
+  }
+
+  .search-box {
+    width: 22vw;
+    height: 1vh;
+  }
+
+  input {
+    
+    height: 1vh;
+  }
 }
