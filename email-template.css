@@ -14,9 +14,7 @@ body {
   height: 100vh;
 }
 
-.left-font-size {
-  margin: 0;
-  padding: 0;
+.small-screen {
   font-size: 1vw;
 }
 
@@ -28,17 +26,11 @@ body {
   background-color: rgb(235, 235, 235);
   height: 100vh;
 }
-.middle-font-size {
-  font-size: 1vw;
-}
+
 
 #right-col {
   background-color: white;
   height: 100vh;
-}
-
-.right-font-size {
-  font-size: 1vw;
 }
 
 .title-font-size {
@@ -49,8 +41,6 @@ body {
   padding-left: 4vw;
   padding-right: 4vw;
 }
-
-
 
 .link {
   display: flex;
@@ -144,13 +134,26 @@ textarea {
     height: 100%;
   }
 
+  .small-screen {
+    font-size: 2vw;
+  }
+
+  .button-compose {
+    font-size: 2vw;
+    padding-left: 5em !important;
+    padding-right: 5em !important;
+  }
+
+  .left-column-margin {
+    margin-left: 5em ;
+  }
+
   .search-box {
-    width: 22vw;
-    height: 1vh;
+    width: 52vw;
+    height: 2vh;
   }
 
   input {
-    
-    height: 1vh;
+    height: 2vh;
   }
 }
