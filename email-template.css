@@ -5,36 +5,11 @@ body, html {
 body {
   height: 100vh;
   overflow: auto;
- 
 }
 
-
-#left-col {
-  background-color: rgb(24, 61, 46);
-  height: 100vh;
-}
-
-.small-screen {
-  font-size: 1vw;
-}
-
-.button-compose {
-  font-size: 1vw;
-}
-
-#middle-col {
-  background-color: rgb(235, 235, 235);
-  height: 100vh;
-}
-
-
-#right-col {
-  background-color: white;
-  height: 100vh;
-}
-
-.title-font-size {
-  font-size: 2vw;
+button {
+  background: transparent;
+  border: none;
 }
 
 #button{
@@ -42,46 +17,76 @@ body {
   padding-right: 4vw;
 }
 
-.link {
-  display: flex;
-  justify-content: flex-start;
-  color: white;
-  text-decoration: none;
-  font-size: larger;
-  border: none;
-  margin-top: 2px !important;
-}
-
-.link:hover {
-  color: white;
-  font-weight: 700;
+.button-compose {
+  font-size: 1vw;
 }
 
 .higlight {
   font-size: medium;
 }
 
-
 .higlight:hover {
   background-color: whitesmoke !important;
-  -webkit-box-shadow: 0px 2px 11px 2px rgba(0,0,0,0.35);
-  -moz-box-shadow: 0px 2px 11px 2px rgba(0,0,0,0.35);
+  border-radius: 3px;
   box-shadow: 0px 2px 11px 2px rgba(0,0,0,0.35);
   cursor: pointer;
-  border-radius: 3px;
-  
+  -webkit-box-shadow: 0px 2px 11px 2px rgba(0,0,0,0.35);
+  -moz-box-shadow: 0px 2px 11px 2px rgba(0,0,0,0.35);
 }
 
-.date-time{
+input {
+  border: none;
+  height: 3vh;
+  outline: none;
+  width: 15vw;
+}
+
+#left-col {
+  background-color: rgb(22, 54, 43);
+  height: 100vh;
+}
+
+.link-control {
+  display: flex;
+  justify-content: flex-start;
+  border: none;
+  color: white;
+  font-size: larger;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.link-control:hover {
+  color: white;
+  font-weight: 700;
+}
+
+.message-box {
+  background: white;
+  border: solid 2px rgb(218, 212, 212);
+  border-radius: 2px;
+  margin: 5em 3em 5em 3em ;
+}
+
+#middle-col {
+  background-color: rgb(235, 235, 235);
+  height: 100vh;
+}
+
+#right-col {
+  background-color: white;
+  height: 100vh;
+}
+
+.right-float{
   float: right;
 }
 
 .search-box {
-  width: 22vw;
-  margin-top: 30px;
   background: white;
   border-radius: 5px;
-  
+  margin-top: 30px;
+  width: 22vw;
 }
 
 .search-box:hover {
@@ -90,40 +95,35 @@ body {
   box-shadow: 0px 2px 11px 2px rgba(0,0,0,0.35);
 }
 
-form {
-  margin: 0;
-}
-
-input {
-  border: none;
-  outline: none;
-  width: 15vw;
-  height: 3vh;
- 
-}
-
-button {
-  background: transparent;
-  border: none;
-}
-
-.message-box {
-  margin-top: 160px !important;
-  margin-left: 3em;
-  margin-right: 3em;
-  border: solid 2px rgb(218, 212, 212);
-  margin-top: 30px;
-  background: white;
-  border-radius: 2px;
+.small-screen {
+  font-size: 1vw;
 }
 
 textarea {
   border: none !important;
 }
 
+.title-font-size {
+  font-size: 2vw;
+}
+
 @media (max-width: 575px) {
+  .button-compose {
+    font-size: 2vw;
+    padding-left: 5em !important;
+    padding-right: 5em !important;
+  }
+
+  input {
+    height: 2vh;
+  }
+
   #left-col {
-    height: 50%;
+    height: 100%;
+  }
+
+  .left-column-margin {
+    margin-left: 5em ;
   }
 
   #middle-col {
@@ -134,26 +134,12 @@ textarea {
     height: 100%;
   }
 
+  .search-box {
+    height: 2vh;
+    width: 52vw;
+  }
+
   .small-screen {
     font-size: 2vw;
-  }
-
-  .button-compose {
-    font-size: 2vw;
-    padding-left: 5em !important;
-    padding-right: 5em !important;
-  }
-
-  .left-column-margin {
-    margin-left: 5em ;
-  }
-
-  .search-box {
-    width: 52vw;
-    height: 2vh;
-  }
-
-  input {
-    height: 2vh;
   }
 }
